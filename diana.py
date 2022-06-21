@@ -126,6 +126,8 @@ def compile(path):
     buffer = ""
     for token in tokens:
         if token.require_convert:
+            if buffer[-1] not in string.whitespace:
+                buffer += " "
             if token.content not in macros:
                 macros[token.content] = next(gen)
             buffer += macros[token.content]

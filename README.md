@@ -4,6 +4,8 @@
 
 使用方法：`python diana.py [-h] [-i INPUTS [INPUTS ...]]`
 
+> 因为我本地的编译器不支持 unicode 变量名，所以代码未经充分测试，可能有不少 bug，请小心食用
+
 # 示例
 
 - 输入：
